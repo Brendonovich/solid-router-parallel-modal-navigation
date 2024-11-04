@@ -16,8 +16,7 @@ const routes = [
 		) => {
 			const location = useLocation();
 			const isPostPage = createMemo(
-				(prev: boolean) =>
-					location.pathname.startsWith("/post") && prev !== false,
+				(prev: boolean) => location.pathname.startsWith("/post") && prev,
 				true,
 			);
 
